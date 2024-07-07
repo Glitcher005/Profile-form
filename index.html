@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="home-icon.png" alt="Home" class="home-icon">
+        <h1>Home</h1>
+    </div>
+    <div class="container">
+        <div class="profile-form">
+            <div class="header">
+                <p1>Home / Profile</p1>
+            </div>
+            <div class="profile-picture">
+                <img src="profile.png" alt="Profile Picture">
+                <p>person@gmail.com</p>
+            </div>
+            <form id="form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name"><br>
+                    <small>No Special Characters allowed</small>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="roll-number" placeholder="Roll Number"><br>
+                    <small>Length must be only 9 characters long. 
+                        Roll Number format must be proper</small>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="mobile-number" placeholder="Mobile Number"><br>
+                    <small>Length must be only 10 digits long</small>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
