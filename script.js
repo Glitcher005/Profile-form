@@ -53,12 +53,12 @@ function validateMobileNumber(input) {
 function showError(input, message) {
     const inputGroup = input.parentElement;
     const span = inputGroup.querySelector('span');
-    small.innerText = message;
-    small.style.display = 'block';
+    span.innerText = message;
+    span.style.display = 'block';
 }
 
 function showSuccess(input) {
     const inputGroup = input.parentElement;
     const span = inputGroup.querySelector('span');
-    small.style.display = 'none';
+    span.style.display = 'none';
 }
