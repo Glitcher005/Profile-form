@@ -71,7 +71,7 @@ input::placeholder {
 span {
     color: #e74c3c;
     display: none;
-    left: start;
+    left: 0;
 }
 
 button {
