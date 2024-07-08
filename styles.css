@@ -92,7 +92,7 @@ button:hover {
 
 @media (max-width: 600px) {
     .profile-form {
-        width: 96%;
+        width: 70%;
         padding: 10px;
     }
 }
