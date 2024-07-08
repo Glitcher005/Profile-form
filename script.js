@@ -39,7 +39,7 @@ function validateRollNumber(input) {
         return false;
     }
     if (!re.test(input.value.trim())) {
-        showError(input, 'Length must be only 9 characters long. Roll Number format must be proper');
+        showError(input, 'Length must be only 9 characters long. Roll Number format must be numerical');
         return false;
     } else {
         showSuccess(input);
@@ -54,7 +54,7 @@ function validateMobileNumber(input) {
         return false;
     }
     if (!re.test(input.value.trim())) {
-        showError(input, 'Length must be only 10 digits long');
+        showError(input, 'Length must be only 10 digits long. Characters or symbols are not allowed');
         return false;
     } else {
         showSuccess(input);
