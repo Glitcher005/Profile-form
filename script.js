@@ -22,6 +22,10 @@ function validateName(input) {
     if (!re.test(input.value.trim() == "")) {
         showError(input, 'No Special Characters allowed');
         return false;
+    }
+    if (!re.test(input.value.trim() == "")) {
+        showError(input, 'No Special Characters allowed');
+        return false;
     } else {
         showSuccess(input);
         return true;
@@ -30,6 +34,10 @@ function validateName(input) {
 
 function validateRollNumber(input) {
     const re = /^[0-9]{9}$/;
+        if (!re.test(input.value.trim() == "")) {
+        showError(input, 'Length must be only 9 characters long. Roll Number format must be proper');
+        return false;
+    }
     if (!re.test(input.value.trim() == "")) {
         showError(input, 'Length must be only 9 characters long. Roll Number format must be proper');
         return false;
@@ -41,6 +49,10 @@ function validateRollNumber(input) {
 
 function validateMobileNumber(input) {
     const re = /^[0-9]{10}$/;
+        if (!re.test(input.value.trim() == "")) {
+        showError(input, 'Length must be only 10 digits long');
+        return false;
+    }
     if (!re.test(input.value.trim() == "")) {
         showError(input, 'Length must be only 10 digits long');
         return false;
