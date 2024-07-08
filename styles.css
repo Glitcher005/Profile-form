@@ -68,10 +68,10 @@ input::placeholder {
     color: #aaa;
 }
 
-small {
+span {
     color: #e74c3c;
     display: none;
-    left: 0;
+    left: start;
 }
 
 button {
