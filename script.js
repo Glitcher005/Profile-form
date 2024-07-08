@@ -19,11 +19,11 @@ function validateForm() {
 
 function validateName(input) {
     const re = /^[A-Za-z\s]+$/;
-    if (!re.test(input.value.trim() == "")) {
-        showError(input, 'No Special Characters allowed');
+    if(input.value.trim()== ""){
+        showError(input, "Name can't be empty");
         return false;
     }
-    if (!re.test(input.value.trim() == "")) {
+    if (!re.test(input.value.trim())) {
         showError(input, 'No Special Characters allowed');
         return false;
     } else {
@@ -34,11 +34,11 @@ function validateName(input) {
 
 function validateRollNumber(input) {
     const re = /^[0-9]{9}$/;
-        if (!re.test(input.value.trim() == "")) {
-        showError(input, 'Length must be only 9 characters long. Roll Number format must be proper');
+    if(input.value.trim()== ""){
+        showError(input, "Roll Number can't be empty");
         return false;
     }
-    if (!re.test(input.value.trim() == "")) {
+    if (!re.test(input.value.trim())) {
         showError(input, 'Length must be only 9 characters long. Roll Number format must be proper');
         return false;
     } else {
@@ -49,11 +49,11 @@ function validateRollNumber(input) {
 
 function validateMobileNumber(input) {
     const re = /^[0-9]{10}$/;
-        if (!re.test(input.value.trim() == "")) {
-        showError(input, 'Length must be only 10 digits long');
+    if(input.value.trim()== ""){
+        showError(input, "Mobile Number can't be empty");
         return false;
     }
-    if (!re.test(input.value.trim() == "")) {
+    if (!re.test(input.value.trim())) {
         showError(input, 'Length must be only 10 digits long');
         return false;
     } else {
